@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_new_task">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+
+        android:background="@drawable/bottom_background"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="48dp">
+
+        <View
+            android:layout_marginVertical="2dp"
+            android:layout_width="80dp"
+            android:background="@drawable/close_view"
+            android:layout_gravity="center"
+            android:id="@+id/close_view"
+            android:layout_height="6dp"/>
+
+        <TextView
+
+
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="23dp"
+            android:layout_marginStart="3dp"
+            android:text="Enter the details below 📝"
+            android:textSize="24dp"
+
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bottomTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/single_edittext_bottom"
+            android:textColor="@color/black"
+            android:padding="18dp"
+
+            android:layout_marginStart="5dp"
+            android:inputType="text"
+            android:layout_marginTop="28dp"
+            android:textColorHint="@color/black"
+            android:autofillHints="name"
+            android:hint="Heading e.g. Moore's Party"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/bottomDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/single_edittext_bottom"
+            android:padding="18dp"
+            android:visibility="gone"
+            android:layout_marginStart="5dp"
+            android:textColorHint="@color/black"
+            android:inputType="date"
+            android:layout_marginTop="18dp"
+            android:textSize="14sp"
+            android:hint="What would be date or time ?"/>
+
+
+        <EditText
+            android:id="@+id/bottomDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/single_edittext_bottom"
+            android:padding="18dp"
+            android:layout_marginStart="5dp"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+            android:layout_marginTop="18dp"
+            android:textSize="14sp"
+            android:hint="Description e.g. I have to attend.."/>
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#57CC99"
+            android:layout_marginVertical="12dp"
+            android:paddingVertical="14dp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="24dp"
+
+            android:textStyle="bold"
+            android:text="Done" />
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

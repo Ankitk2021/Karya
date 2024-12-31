@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#80ED99"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup_page">
+
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/signup_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bakbak_one"
+            android:padding="18dp"
+
+            android:text="Create an account."
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="16dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/profile_section_background"
+            android:elevation="1px"
+            android:textColor="@color/black"
+            android:fontFamily="@font/aoboshi_one"
+            android:hint="your email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="14dp"
+            android:textColorHint="#8A000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_username" />
+
+        <EditText
+            android:id="@+id/signup_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="16dp"
+            android:autofillHints="username"
+            android:background="@drawable/profile_section_background"
+            android:elevation="1px"
+            android:textColor="@color/black"
+            android:fontFamily="@font/aoboshi_one"
+            android:hint="your name"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="14dp"
+            android:textColorHint="#8A000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_title" />
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="16dp"
+            android:autofillHints="password"
+            android:background="@drawable/profile_section_background"
+            android:elevation="1px"
+            android:fontFamily="@font/aoboshi_one"
+            android:hint="your password"
+            android:inputType="textWebPassword"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="14dp"
+            android:textColorHint="#8A000000"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_email" />
+
+        <EditText
+            android:id="@+id/signup_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="16dp"
+            android:autofillHints="phone"
+            android:background="@drawable/profile_section_background"
+            android:elevation="1px"
+            android:textColor="@color/black"
+            android:fontFamily="@font/aoboshi_one"
+            android:hint="your phone number"
+            android:importantForAutofill="yes"
+            android:inputType="phone"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="14dp"
+            android:textColorHint="#8A000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_password" />
+
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:backgroundTint="@color/status_details"
+            android:fontFamily="@font/aoboshi_one"
+            android:paddingVertical="14dp"
+            android:text="Sign up"
+
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_phone"
+            app:layout_constraintVertical_bias="0.052" />
+
+        <TextView
+            android:id="@+id/dont_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+
+            android:paddingVertical="16dp"
+            android:text="Don't have an account ? "
+            android:textColor="#B5000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/signup_btn"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/dont_have_account_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-22dp"
+            android:layout_marginTop="3dp"
+            android:paddingVertical="8dp"
+            android:text="Sign in now"
+
+            android:textColor="@color/status_details"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@+id/dont_have_account"
+            app:layout_constraintTop_toBottomOf="@+id/signup_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Karya</string>
+    <string name="this_helps_adding_new_tasks">This helps adding new tasks.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="completed">Completed</string>
+    <string name="noticed">Noticed.</string>
+    <string name="hey_champion_try_log_in_your_account">Hey champion, try log in your account. 😃</string>
+    <string name="mark_done">Mark done ?</string>
+    <string name="profile_photo">profile_photo</string>
+    <string name="k_rya">Kārya</string>
+    <string name="profile_logo">profile_logo</string>
+    <string name="nothing">nothing</string>
+    <string name="no_task_today">No task today.</string>
+    <string name="this_is_profile_icon">this is profile icon</string>
+    <string name="search_your_made_tasks_here">Search your todos..</string>
+    <string name="username">Username</string>
+    <string name="ankitkr_gmail_com">ankitkr@gmail.com</string>
+    <string name="_1234567890">1234567890</string>
+    <string name="this_a_button_help_you_log_out_from_your_account">This a button help you log out from your account.</string>
+</resources>

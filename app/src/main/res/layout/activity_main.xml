@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#80ED99"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="54dp"
+                android:fontFamily="@font/bakbak_onhead"
+                android:paddingStart="14dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/profile_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/profile_background"
+                android:contentDescription="@string/this_is_profile_icon"
+                android:elevation="1dp"
+                android:padding="8dp"
+                android:src="@drawable/baseline_person_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/close_btn_profile_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/profile_section_background"
+                android:contentDescription="@string/profile_photo"
+                android:elevation="200dp"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/baseline_close_24"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginVertical="4dp"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginVertical="4dp"
+                android:gravity="center"
+                app:iconifiedByDefault="false"
+                android:background="@drawable/search_background"
+                android:elevation="2dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/search_your_made_tasks_here"
+                android:labelFor="@id/searchView"
+                android:orientation="horizontal"
+                android:outlineProvider="background"
+                android:text="@string/search_your_made_tasks_here"
+                android:textAppearance="@color/black"
+                app:goIcon="@drawable/baseline_email_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:queryHint="@string/search_your_made_tasks_here"
+                app:searchHintIcon="@drawable/baseline_search_24"
+                app:searchIcon="@drawable/baseline_search_24" />
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:elevation="84dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+                <FrameLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="8dp"
+                    android:elevation="84dp"
+                    android:paddingBottom="48dp"
+                    android:visibility="gone" />
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/List_on_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="94dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/noTaskLinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/noSvg"
+                    android:layout_marginTop="210sp"
+                    android:layout_width="174dp"
+                    android:layout_height="149dp"
+                    android:src="@drawable/task_assignment_task_homework_assignment_svgrepo_com" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/aoboshi_one3"
+                    android:text="No task today."
+                    android:textColor="#ED313131"
+                    android:textSize="20sp" />
+
+
+
+            </LinearLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_noDataFound"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="45dp"
+                app:lottie_repeatMode="reverse"
+                app:lottie_loop="true"
+                android:elevation="8dp"
+                android:visibility="gone"
+                app:lottie_repeatCount="1"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/no_data_found_"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+               />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#22577A"
+        android:clickable="true"
+        android:src="@drawable/baseline_add_24"
+        android:contentDescription="@string/this_helps_adding_new_tasks"
+        android:focusable="true"
+        android:hapticFeedbackEnabled="true"
+        android:onClick="vibratethis"
+        android:soundEffectsEnabled="true"
+        android:tooltipText="Add a new task."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

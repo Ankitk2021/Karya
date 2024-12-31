@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/aoboshi_one</item>
+        <item>@font/aoboshi_one3</item>
+        <item>@font/bakbak_one</item>
+        <item>@font/bakbak_onhead</item>
+        <item>@font/cabin_sketch_bold</item>
+    </array>
+</resources>
